@@ -1,0 +1,27 @@
+[
+    {
+        "id": "f058c308-ea93-4f8e-bb01-497456727f0b",
+        "topic": "/subscriptions/79e1d757-ecdb-4dc3-b0b4-035bac76053d/resourcegroups/acs_demo/providers/microsoft.communication/communicationservices/acs-default1",
+        "subject": "thread/19:acsV1_2Nt1bjLsKGPt7ZaKyFA2c5U1QmDKz1mqPQPDZaeRqWg1@thread.v2/sender/8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac",
+        "data": {
+            "messageBody": "ECHO: ECHO: ECHO: stop pls",
+            "messageId": "1746108192597",
+            "type": "Text",
+            "version": 1746108192597,
+            "senderCommunicationIdentifier": {
+                "kind": "communicationUser",
+                "rawId": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac",
+                "communicationUser": {
+                    "id": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac"
+                }
+            },
+            "composeTime": "2025-05-01T14:03:12.597+00:00",
+            "threadId": "19:acsV1_2Nt1bjLsKGPt7ZaKyFA2c5U1QmDKz1mqPQPDZaeRqWg1@thread.v2",
+            "transactionId": "vdQ236G4XEWFXIhdgAnQbg.2.1.1.1.954822450.1"
+        },
+        "eventType": "Microsoft.Communication.ChatMessageReceivedInThread",
+        "dataVersion": "1.0",
+        "metadataVersion": "1",
+        "eventTime": "2025-05-01T14:03:12.7390494Z"
+    }
+]

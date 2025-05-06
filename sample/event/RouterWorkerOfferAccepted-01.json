@@ -1,0 +1,27 @@
+{
+    "id": "92c39372-2a36-4710-b3a0-b34d132652f6",
+    "topic": "/subscriptions/79e1d757-ecdb-4dc3-b0b4-035bac76053d/resourcegroups/acs_demo/providers/microsoft.communication/communicationservices/acs-default1",
+    "subject": "worker/973091a8-f96e-4036-a11e-5cd16965d223_00000027-2fec-8893-ea6c-c93a0d00b431/job/936c9583-1fd4-4d17-9ad8-4c4f5ab6a6c6",
+    "data": {
+      "queueId": "queue-chat-human-agent",
+      "workerId": "973091a8-f96e-4036-a11e-5cd16965d223_00000027-2fec-8893-ea6c-c93a0d00b431",
+      "workerLabels": {
+        "investment": 2,
+        "territory-bkk": 1,
+        "Id": "973091a8-f96e-4036-a11e-5cd16965d223_00000027-2fec-8893-ea6c-c93a0d00b431"
+      },
+      "workerTags": {},
+      "offerId": "fe7f4715-0d97-46d0-a1a8-1d2ce9376f94",
+      "assignmentId": "50294217-3057-44c9-aaf6-114bbd12f6b5",
+      "jobPriority": 1,
+      "jobLabels": {},
+      "jobTags": {},
+      "jobId": "936c9583-1fd4-4d17-9ad8-4c4f5ab6a6c6",
+      "channelReference": "19:acsV1_2Nt1bjLsKGPt7ZaKyFA2c5U1QmDKz1mqPQPDZaeRqWg1@thread.v2",
+      "channelId": "chat"
+    },
+    "eventType": "Microsoft.Communication.RouterWorkerOfferAccepted",
+    "dataVersion": "1.0",
+    "metadataVersion": "1",
+    "eventTime": "2025-05-02T08:09:28.4521259Z"
+  }

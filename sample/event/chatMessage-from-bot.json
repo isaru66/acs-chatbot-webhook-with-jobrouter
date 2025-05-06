@@ -1,0 +1,38 @@
+[
+    {
+        "id": "f1b24e0ac93d42bd9df1b37344290f95.76738555",
+        "topic": "/subscriptions/79e1d757-ecdb-4dc3-b0b4-035bac76053d/resourcegroups/acs_demo/providers/microsoft.communication/communicationservices/acs-default1",
+        "subject": "thread/19:acsV1_KC0Jb1_p2Y3Ezl4iOZ-mvErVE2p5LXBJUdkINd8sGOA1@thread.v2/sender/8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac/recipient/8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000027-25b5-51be-eed1-1cbd45604eba",
+        "data": {
+            "messageBody": "ECHO: test",
+            "messageId": "1746095120693",
+            "metadata": null,
+            "senderId": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac",
+            "senderCommunicationIdentifier": {
+                "rawId": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac",
+                "kind": "communicationUser",
+                "communicationUser": {
+                    "id": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000026-dded-fb5a-90d7-1cbd456050ac"
+                }
+            },
+            "senderDisplayName": "",
+            "composeTime": "2025-05-01T10:25:20.693Z",
+            "type": "Text",
+            "version": 1746095120693,
+            "recipientId": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000027-25b5-51be-eed1-1cbd45604eba",
+            "recipientCommunicationIdentifier": {
+                "rawId": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000027-25b5-51be-eed1-1cbd45604eba",
+                "kind": "communicationUser",
+                "communicationUser": {
+                    "id": "8:acs:973091a8-f96e-4036-a11e-5cd16965d223_00000027-25b5-51be-eed1-1cbd45604eba"
+                }
+            },
+            "transactionId": "IviuP8TT2EiWq+SqTH5oXQ.2.1.1.1.444194650.1.0",
+            "threadId": "19:acsV1_KC0Jb1_p2Y3Ezl4iOZ-mvErVE2p5LXBJUdkINd8sGOA1@thread.v2"
+        },
+        "eventType": "Microsoft.Communication.ChatMessageReceived",
+        "dataVersion": "1.0",
+        "metadataVersion": "1",
+        "eventTime": "2025-05-01T10:25:21.856476Z"
+    }
+]
