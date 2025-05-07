@@ -62,7 +62,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('ACS webhook bot server is running!')
 })
 
 app.post('/webhook', async (req, res) => {
