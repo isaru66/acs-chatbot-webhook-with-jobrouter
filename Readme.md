@@ -1,3 +1,17 @@
+## Azure Communication Service - Event Grid setup
+Please follow [ACS Event Grid integration](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/handle-sms-events#subscribe-to-sms-events-by-using-web-hooks)
+
+On EventGrid filter, filter 2 Event
+- Chat Message Received in Thread
+- Router Worker Offer Accepted
+
+![EventGrid](docs\images\eventgrid_filter.png)
+
+Setup Webhook
+- for development configure URL to DevTunnel, or use https URL that point to Azure Resource.
+
+![EventGrid](docs\images\eventgrid_webhook.png)
+
 ## Dev Tunnel Setup Guide
 
 ### Installing Dev Tunnel
@@ -62,4 +76,4 @@ brew install --cask devtunnel
     ```bash
     devtunnel host
     ```
-    Take note of the public URL of your tunnel, you will need this URL to configure webhook with Azure Event Grid
+    Take note of the public URL of your tunnel, use this URL to configure webhook with Azure Event Grid for local development
