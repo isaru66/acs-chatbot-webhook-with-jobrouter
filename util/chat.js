@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // Your unique Azure Communication service endpoint
-let endpointUrl = process.env.ACS_ENDPOINT || 'https://acs-default1.asiapacific.communication.azure.com/';
+let endpointUrl = process.env.ACS_ENDPOINT;
 let botIdentity = process.env.ACS_BOT_IDENTITY;
 let userAccessToken = process.env.ACS_BOT_TOKEN;
 
