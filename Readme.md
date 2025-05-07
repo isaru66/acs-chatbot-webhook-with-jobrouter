@@ -3,7 +3,10 @@ install npm package
 ```
 npm install
 ```
-run bot-server.js
+
+rename .env.example to .env, then setup the value in .env file
+
+to run the app
 ```
 npm run start
 ```
