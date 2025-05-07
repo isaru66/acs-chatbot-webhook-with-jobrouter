@@ -154,6 +154,8 @@ app.post('/webhook', async (req, res) => {
       const workerId = event.data.workerId;
       const threadId = event.data.channelReference;
 
+      const workerDisplayName = event.data.workerLabels?.acsDisplayName || "Agent";
+
       // Add this line to track threads with human agents
       threadsWithHumanAgent.add(threadId);
       console.log(`Added thread ${threadId} to human agent list`);
@@ -169,9 +171,15 @@ app.post('/webhook', async (req, res) => {
         participants: [
           {
             id: { communicationUserId: workerACSId },
+            displayName: workerDisplayName
           }
         ]
       });
+
+      const sendMessageRequest = {
+        content: `Adding human agent [${workerDisplayName}] to chat thread.`,
+      };
+      await chatThreadClient.sendMessage(sendMessageRequest);
 
       console.log(`Successfully added worker ${workerACSId} to thread ${threadId}`);
       return res.status(200).send();
@@ -247,8 +255,9 @@ Do not use **markdown** or any other formatting in your response.
   if (response?.error !== undefined && response.status !== "200") {
     throw response.error;
   }
-  const intentOutput = response.choices[0].message.content;
-  console.log("Intent classification result: " + intentOutput);
+  let replyMessage = response.choices[0].message.content;
+  replyMessage = replyMessage.replace("**", ''); // remove markdown formatting
+  console.log("generateAIResponse result: " + replyMessage);
   return response.choices[0].message.content;
 }
 
