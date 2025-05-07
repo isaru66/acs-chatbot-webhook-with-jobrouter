@@ -1,3 +1,14 @@
+## Run this Example locally
+install npm package
+```
+npm install
+```
+run bot-server.js
+```
+npm run start
+```
+
+
 ## Azure Communication Service - Event Grid setup
 Please follow [ACS Event Grid integration](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/handle-sms-events#subscribe-to-sms-events-by-using-web-hooks)
 
@@ -8,9 +19,12 @@ On EventGrid filter, filter 2 Event
 ![EventGrid](docs\images\eventgrid_filter.png)
 
 Setup Webhook
-- for development configure URL to DevTunnel, or use https URL that point to Azure Resource.
+- for development configure URL to DevTunnel for example "https://\<your-dev-tunnel\>.asse.devtunnels.ms/webhook" , or use https URL that point to Azure Resource. 
 
 ![EventGrid](docs\images\eventgrid_webhook.png)
+
+## Azure Event Grid Viewer
+If you want to visualize event grid in realtime, deploy [Event Grid Viewer](https://learn.microsoft.com/en-us/samples/azure-samples/azure-event-grid-viewer/azure-event-grid-viewer/) and add EventGrid subscription to your
 
 ## Dev Tunnel Setup Guide
 
