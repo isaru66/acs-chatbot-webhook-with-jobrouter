@@ -6,6 +6,7 @@ import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import customer_info from './mock-data/customer-info.js';
 import service_info from './mock-data/service-policy.js';
+import { CommunicationIdentityClient } from '@azure/communication-identity';
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -19,7 +20,9 @@ const threadsWithHumanAgent = new Set();
 // Setup Azure Communication service
 let endpointUrl = process.env.ACS_ENDPOINT || 'https://acs-default1.asiapacific.communication.azure.com/';
 let botIdentity = process.env.ACS_BOT_IDENTITY;
-let userAccessToken = process.env.ACS_BOT_TOKEN;
+const identityClient = new CommunicationIdentityClient(process.env.ACS_CONNECTION_STRING);
+const userTokenResponse = await identityClient.getToken({ communicationUserId: botIdentity }, ["chat"]);
+let userAccessToken = userTokenResponse.token;
 let chatClient = new ChatClient(endpointUrl, new AzureCommunicationTokenCredential(userAccessToken));
 let jobRouterClient = JobRouterClient(process.env.ACS_CONNECTION_STRING);
 
